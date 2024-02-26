@@ -1,62 +1,74 @@
 <!DOCTYPE html>
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Aryaveer Kumar</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
-        rel="stylesheet">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div class="top-container">
-        <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
-        <h1>I'm Aryaveer.</h1>
-        <h2>a <span class="pro">pro</span>grammer.</h2>
-        <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img">
-        <img src="images/mountain.png" alt="mountain-img">
-    </div>
-    <div class="middle-container">
-        <div class="profile">
-            <img src="images/profile.png" alt="profile-img">
-            <h2>Hello.</h2>
-            <p class="intro">I am a 14 y/o boy from India.
-            </p>
-        </div>
-        <hr>
-        <div class="skills">
-            <h2>My Skills.</h2>
-            <div class="skill-row">
-                <img class="coding-img" src="images/coding.png" alt="coding-img">
-                <h3>Coding</h3>
-                <p>I started coding when I was 12. I really enjoy coding and I know some languages.</p>
+    <!-- navbar section-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
             </div>
-            <div class="skill-row">
-                <img class="gaming-img" src="images/gaming.png" alt="gaming-img">
-                <h3>Gaming</h3>
-                <p>I love playing games and especially competitive games. I play them very well. lol.</p>
+        </div>
+    </nav>
+
+    <!-- hero section-->
+    <section class="bgimage">
+        <div class="hero-text">
+            <h1 class="hero_title">Welcome to My Portfolio</h1>
+            <p class="hero_desc">A showcase of my skills, experiences, and projects.</p>
+        </div>
+    </section>
+
+    <!-- about section-->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="image.jpg" alt="about" class="imageAboutPage">
+                </div>
+                <div class="col-lg-8">
+                    <h2 class="mt-4 pt-4">About Me</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at libero id mauris ullamcorper tempor et a tellus. In hac habitasse platea dictumst. Sed bibendum ultrices ante, non laoreet ex egestas ut. Nullam volutpat sapien eget nisl tincidunt commodo.</p>
+                </div>
             </div>
         </div>
-        <hr>
-        <div class="contact-me">
-            <h2>Get In Touch</h2>
-            <h3>If you want to talk to me.</h3>
-            <p class="contact-message">Feel free to mail me.</p>
-            <a class="btn" href="mailto:aryaveer11official@gmail.com">CONTACT ME</a>
-        </div>
-    </div>
+    </section>
 
-
-    <div class="bottom-container">
-        <a class="footer-link" href="https://discord.gg/xPvCsyvAvg">Discord</a>
-        <a class="footer-link" href="https://twitter.com/VEEZ_OP">Twitter</a>
-        <a class="footer-link" href="https://aryaveerkumar.github.io/">Website</a>
-        <p class="copyright">© 2023 Aryaveer Kumar.</p>
-    </div>
-
-</body>
-
-</html>
+    <!-- portfolio section-->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="servicesText card">
+                        <div class="servicesIcon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Web Development</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at libero id mauris ullamcorper tempor et a tellus.</p>
+                        </div>
+                
